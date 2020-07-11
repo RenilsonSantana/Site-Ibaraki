@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fotos Ibaraki</title>
+		<link rel="stylesheet" type="text/css" href="../Css/Estilo.css">
+		<link rel="stylesheet" type="text/css" href="../Css/Carrossel2.css">
+		<link rel="shortcut icon" href="../Imagens/Ibaraki.png" type="image/x-icon">
+		<script language="javascript" src="../JavaScript/jquery.js"></script>
+		<script src="../JavaScript/jquery.min.js"></script>
+		<script type="text/javascript" src="../JavaScript/jcarousellite.js"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="cabecalho">
+				<ul class="menu">
+					<li><a href="../Index.html">Home</a></li>
+					<li><a href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+					<li><a href="../Unidades/Unidades.html">Unidades</a></li>
+					<li><a href="../Clientes/Clientes.html">Clientes</a></li>
+					<li><a href="Fotos.html">Fotos</a></li>
+					<li><a href="../Contato/Contato.html">Fale Conosco</a></li>
+					<li><a href="../Trabalhe/Trabalhe.html">Trabalhe Conosco</a></li>
+					<li><a href="#">Serviços</a>
+						<ul>
+							<li><a href="../Serviços/Dedetizacao.html">Dedetização</a></li>
+							<li><a href="../Serviços/Descupinizacao.html">Descupinização</a></li>
+							<li><a href="../Serviços/Desratizacao.html">Desratização</a></li>
+							<li><a href="../Serviços/Desinsetizacao.html">Desinsetização</a></li>
+							<li><a href="../Serviços/ControlePraga.html">Controle de Pragas</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="black">
+			<div id="content2">
+				<div id="carrossel2">
+					<ul>
+						<li>
+							<img src="../Imagens/foto1.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto2.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto3.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto4.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto5.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto6.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto7.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto8.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto9.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto10.jpg" alt="Nome da Imagem"/>
+						</li>
+						<li>
+							<img src="../Imagens/foto11.jpg" alt="Nome da Imagem"/>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<nav id="menu-carrossel2">
+					<input type="button" class="prev" value="Anterior">
+					<input type="button" class="next" value="Proximo">
+				</nav>
+			</div>
+			<footer id="rodape">
+				<p>Copyright&copy; - by Renilson Santana, Mayara Caroline e Nicolas Aguiar</p>
+			</footer>
+		</div>
+		<script>
+			$(function() {
+				$("#carrossel2"). jCarouselLite({
+        			btnPrev: '.prev', 
+        			btnNext: '.next',
+        			visible: 2,
+					auto: 2000,
+					speed: 1000
+    			})
+			})
+		</script>
+	</body>
+</html>

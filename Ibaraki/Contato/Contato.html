@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ibaraki Fale Conosco</title>
+		<link rel="stylesheet" type="text/css" href="../Css/Estilo.css">
+		<link rel="stylesheet" type="text/css" href="../Css/Form.css">
+		<link rel="shortcut icon" href="../Imagens/Ibaraki.png" type="image/x-icon">
+		<script language="javascript" src="../JavaScript/Validacao.js"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="cabecalho">
+				<ul class="menu">
+					<li><a href="../Index.html">Home</a></li>
+					<li><a href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+					<li><a href="../Unidades/Unidades.html">Unidades</a></li>
+					<li><a href="../Clientes/Clientes.html">Clientes</a></li>
+					<li><a href="../Fotos/Fotos.html">Fotos</a></li>
+					<li><a href="Contato.html">Fale Conosco</a></li>
+					<li><a href="../Trabalhe/Trabalhe.html">Trabalhe Conosco</a></li>
+					<li><a href="#">Serviços</a>
+						<ul>
+							<li><a href="../Serviços/Dedetizacao.html">Dedetização</a></li>
+							<li><a href="../Serviços/Descupinizacao.html">Descupinização</a></li>
+							<li><a href="../Serviços/Desratizacao.html">Desratização</a></li>
+							<li><a href="../Serviços/Desinsetizacao.html">Desinsetização</a></li>
+							<li><a href="../Serviços/ControlePraga.html">Controle de Pragas</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="form">
+				<form method="post" name="adm" action="Contato.html" onSubmit="return validarContato(this);">
+					<fieldset class="contato">
+						<legend>Contato</legend>
+						<p>
+							<label for="iNome">Nome: </label>
+							<input type="text" required name="nNome" id="iNome" placeholder="Nome Completo">
+						</p>
+						<p>
+							<label for="iMail">E-Mail: </label>
+							<input type="email" required name="nMail" id="iMail">
+						</p>
+						<p>
+							<label for="iTel">Telefone: </label>
+							<input type="tel" required name="nTel" id="iTel" maxlength="13" OnKeyPress="formatar('##)####-####', this)" placeholder="00)0000-0000" size="10">
+						</p>
+						<p>
+							<label for="iMsg" class="msg">Mensagem: </label>
+							<textarea name="nMsg" required id="iMsg" cols="30" rows="6" placeholder="Deixe aqui sua mensagem"></textarea>
+						</p>
+						<input type="image" src="../Imagens/botao-enviar.png" name="nBotao" id="iBotao" >
+					</fieldset>
+				</form>
+			</div>
+			<footer id="rodape">
+				<p>Copyright&copy; - by: Renilson Santana, Mayara Caroline e Nicolas Aguiar</p>
+			</footer>
+		</div>
+	</body>
+</html>

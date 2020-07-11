@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alguns Clientes Ibaraki</title>
+		<link rel="stylesheet" type="text/css" href="../Css/Estilo.css">
+		<link rel="stylesheet" type="text/css" href="../Css/Carrossel.css">
+		<link rel="shortcut icon" href="../Imagens/Ibaraki.png" type="image/x-icon">
+		<script language="javascript" src="../JavaScript/jquery.js"></script>
+		<script src="../JavaScript/jquery.min.js"></script>
+		<script type="text/javascript" src="../JavaScript/jcarousellite.js"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="cabecalho">
+				<ul class="menu">
+					<li><a href="../Index.html">Home</a></li>
+					<li><a href="../QuemSomos/QuemSomos.html">Quem Somos</a></li>
+					<li><a href="../Unidades/Unidades.html">Unidades</a></li>
+					<li><a href="Clientes.html">Clientes</a></li>
+					<li><a href="../Fotos/Fotos.html">Fotos</a></li>
+					<li><a href="../Contato/Contato.html">Fale Conosco</a></li>
+					<li><a href="../Trabalhe/Trabalhe.html">Trabalhe Conosco</a></li>
+					<li><a href="#">Serviços</a>
+						<ul>
+							<li><a href="../Serviços/Dedetizacao.html">Dedetização</a></li>
+							<li><a href="../Serviços/Descupinizacao.html">Descupinização</a></li>
+							<li><a href="../Serviços/Desratizacao.html">Desratização</a></li>
+							<li><a href="../Serviços/Desinsetizacao.html">Desinsetização</a></li>
+							<li><a href="../Serviços/ControlePraga.html">Controle de Pragas</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="black">
+			<div id="content">
+				<div id="carrossel">
+					<ul>
+						<li>
+							<img src="../Imagens/eluma.jpg" alt="Nome da Imagem" title="Eluma, a marca do cobre"/>
+						</li>
+						<li>
+							<img src="../Imagens/unicef.png" alt="Nome da Imagem" title="Unicef"/>
+						</li>
+						<li>
+							<img src="../Imagens/usp.jpg" alt="Nome da Imagem" title="USP"/>
+						</li>
+						<li>
+							<img src="../Imagens/petrobras.png" alt="Nome da Imagem" title="Petrobras"/>
+						</li>
+						<li>
+							<img src="../Imagens/renner.png" alt="Nome da Imagem" title="Renner"/>
+						</li>
+						<li>
+							<img src="../Imagens/cyrela.jpg" alt="Nome da Imagem" title="Cyrela"/>
+						</li>
+						<li>
+							<img src="../Imagens/mrv.jpg" alt="Nome da Imagem" title="MRV"/>
+						</li>
+						<li>
+							<img src="../Imagens/Harley.jpg" alt="Nome da Imagem" title="Harley-Davidson MotorCycles"/>
+						</li>
+						<li>
+							<img src="../Imagens/assai.jpg" alt="Nome da Imagem" title="Assai Atacadista"/>
+						</li>
+						<li>
+							<img src="../Imagens/centauro.png" alt="Nome da Imagem" title="Centauro"/>
+						</li>
+						<li>
+							<img src="../Imagens/tng.jpg" alt="Nome da Imagem" title="TNG"/>
+						</li>
+						<li>
+							<img src="../Imagens/mapfre.png" alt="Nome da Imagem" title="Mapfre seguros"/>
+						</li>
+						<li>
+							<img src="../Imagens/otis.jpg" alt="Nome da Imagem" title="Otis"/>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<nav id="menu-carrossel">
+					<input type="button" class="prev" value="Anterior">
+					<input type="button" class="next" value="Proximo">
+				</nav>
+			</div>
+			<footer id="rodape">
+				<p>Copyright&copy; - by Renilson Santana, Mayara Caroline e Nicolas Aguiar</p>
+			</footer>
+		</div>
+		<script>
+			$(function() {
+				$("#carrossel"). jCarouselLite({
+        			btnPrev: '.prev', 
+        			btnNext: '.next',
+        			visible: 1,
+					auto: 2000,
+					speed: 2000
+    			})
+			})
+		</script>
+	</body>
+</html>
